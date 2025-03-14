@@ -1,0 +1,9 @@
+# Node modules (dependencies)
+node_modules/
+
+src/script.css
+src/style.css
+
+
+# IDE & Editor settings
+.vscode/
