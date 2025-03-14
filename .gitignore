@@ -3,7 +3,7 @@ node_modules/
 
 src/script.css
 src/style.css
-
+src/future-updates.txt
 
 # IDE & Editor settings
 .vscode/
