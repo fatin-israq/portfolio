@@ -1,3 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+
+  --spacing-big: 48rem;
+  --margin-min: min(8px, 1rem);
+}
+
+@layer base {
+  /* Apply the Poppins font to the body */
+  body {
+    font-family: var(--font-poppins);
+  }
+}
+
+@layer utilities {
+  /* Custom spacing utility */
+  .spacing-big {
+    width: var(--spacing-big);
+    height: var(--spacing-big);
+  }
+
+  /* Custom margin utility */
+  .m-min {
+    margin: var(--margin-min);
+  }
+}
+
+* {
+    @apply transition-colors duration-300;
+}
