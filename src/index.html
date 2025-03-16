@@ -1,429 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/jpg" href="../img/israqlogo-white.png" />
-    <link rel="stylesheet" href="output.css">
-    </script>
-    <title>Fatin Israq Talha | Undergraduate Teaching Assistant</title>
-  </head>
-  <body class="font-poppins dark">
-    <!-- intro section -->
-    <div
-      class="h-[50vh] lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-700 dark:to-slate-900 relative overflow-hidden"
-    >
-      <!-- navbar -->
-      <nav class="w-full fixed top-0 bg-white z-10 px-16 dark:bg-slate-900">
-        <div class="container mx-auto py-5 flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <a href="../img/1sraQ.png"></a>
-            <img
-              class="w-8 dark:hidden"
-              src="../img/israqlogoBlue.png"
-              alt="Logo"
-            />
-            <img
-              class="w-8 hidden dark:block"
-              src="../img/israqlogo-white.png"
-              alt="Logo"
-            />
-            <span class="text-2xl font-bold text-indigo-900 dark:text-white"
-              >1sraQ</span
-            >
-          </div>
-          <ul
-            class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm"
-          >
-            <li class="hover:text-gray-500">
-              <a href="#">HOME</a>
-            </li>
-            <li class="hover:text-gray-500">
-              <a href="#about">ABOUT ME</a>
-            </li>
-            <li class="hover:text-gray-500">
-              <a href="#projects">PROJECTS</a>
-            </li>
-            <li class="hover:text-gray-500">
-              <a href="#work">RESUME</a>
-            </li>
-            <li class="hover:text-gray-500">
-              <a href="#contact">CONTACT</a>
-            </li>
-          </ul>
-          <img
-            id="moon"
-            src="../img/moon.png"
-            class="hidden md:block dark:hidden w-5 cursor-pointer"
-            alt="moon image"
-          />
-          <img
-            id="sun"
-            src="../img/day-mode.png"
-            class="hidden dark:block w-5 cursor-pointer"
-            alt="moon image"
-          />
-          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-10">
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
-          </div>
-          <ul
-            id="menu"
-            class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
-          >
-            <li class="">
-              <a id="hLink" href="#">HOME</a>
-            </li>
-            <li class="">
-              <a id="hLink" href="#about">ABOUT ME</a>
-            </li>
-            <li class="">
-              <a id="hLink" href="#projects">PROJECTS</a>
-            </li>
-            <li class="">
-              <a id="hLink" href="#work">RESUME</a>
-            </li>
-            <li class="">
-              <a id="hLink" href="#contact">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- intro content -->
-      <!-- image -->
-      <img
-        class="absolute bottom-0 right-[5%] lg:left-[10%] mx-auto h-[75%] lg:h-[83%] object-cover hidden lg:block dark:hidden"
-        src="../img/jett.png"
-        alt="Israq portrait"
-      />
-      <img
-        class="absolute bottom-0 right-[-10%] md:right-[10%] lg:left-[10%] mx-auto h-[75%] lg:h-[83%] object-cover lg:hidden dark:block dark:z-20"
-        src="../img/omen.png"
-        alt="Israq portrait"
-      />
-      <!-- circle -->
-      <div
-        class="hidden lg:block absolute -bottom-[40%] left-0 right-0 mx-auto w-big h-big bg-indigo-900 dark:bg-gray-300 rounded-full -z-10 dark:z-10 dark:opacity-10"
-      ></div>
-      <!-- animated text -->
-      <div
-        class="absolute top-1/3 left-5 text-base sm:left-10 sm:text-xl md:left-1/4 md:text-3xl lg:left-5 xl:left-48 lg:text-5xl font-bold flex flex-col gap-5"
-      >
-        <span class="text-gray-600">Developer</span>
-        <p id="text" class="text-red-500 max-w-[100px] lg:max-w-[200px]"></p>
-      </div>
-      <!-- texts -->
-      <div
-        class="hidden lg:flex flex-col gap-5 rounded-2xl shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3"
-      >
-        <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Talha</h1>
-        <p class="text-gray-400">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-          magnam eligendi voluptatibus ipsum doloremque ut minus error
-          provident, excepturi tempora numquam sunt quidem esse. Molestias enim
-          laboriosam quibusdam neque officiis.
-        </p>
-        <a
-          class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-lg font-semibold w-fit"
-          href="#contact"
-          >Hire me</a
-        >
-      </div>
-    </div>
-    <!-- About section  -->
-    <div id="about" class="px-10 dark:bg-slate-900 py-10">
-      <div
-        class="container mx-auto py-20 px-4 flex flex-col-reverse lg:flex-row gap-10 items-center"
-      >
-        <!-- left -->
-        <div class="relative">
-          <img
-            class="h-1/6 absolute top-0 left-0 -z-10"
-            src="../img/dots.png"
-            alt=""
-          />
-          <div
-          class="h-full rounded-full overflow-hidden transition-all duration-500 ease-in-out hover:shadow-xl hover:shadow-indigo-500/50"
-          >
-            <img src="../img/portrait.png" alt="Portrait" />
-          </div>
-        </div>
-        <!-- right -->
-        <div class="my-auto flex flex-col gap-3">
-          <h1 class="text-indigo-600 font-bold">ABOUT ME</h1>
-          <h1 class="text-3xl font-medium dark:text-white">Better Design</h1>
-          <h1 class="text-3xl font-medium dark:text-white">
-            Better Experience
-          </h1>
-          <p class="text-gray-400">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
-            expedita debitis voluptatem excepturi vel totam dolorem vero fugit!
-            Ipsam, placeat!
-          </p>
 
-          <h2 class="text-gray-400 font-medium">C/C++</h2>
-          <div class="w-full bg-gray-200 h-1.5 rounded-md">
-            <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
-          </div>
-          <h2 class="text-gray-400 font-medium">HTML</h2>
-          <div class="w-full bg-gray-200 h-1.5 rounded-md">
-            <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
-          </div>
-          <h2 class="text-gray-400 font-medium">CSS</h2>
-          <div class="w-full bg-gray-200 h-1.5 rounded-md">
-            <div class="w-3/4 bg-indigo-600 h-1.5 rounded-md"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/jpg" href="../img/israqlogo-white.png" />
+  <link rel="stylesheet" href="output.css">
+  </script>
+  <title>Fatin Israq Talha | Undergraduate Teaching Assistant</title>
+</head>
 
-    <!-- Projects Section -->
-    <div id="projects" class="dark:bg-slate-900 py-10">
-      <div class="container mx-auto">
-        <!-- top  -->
-        <div class="flex flex-col gap-3 items-center justify-between">
-          <h1 class="text-indigo-600 font-bold">PROJECTS</h1>
-          <h1 class="text-3xl dark:text-white">What do I do?</h1>
-          <p class="w-1/2 text-center text-gray-400">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
-            expedita debitis voluptatem excepturi vel totam dolorem vero fugit!
-            Ipsam, placeat!
-          </p>
-        </div>
-        <!-- bottom  -->
-        <div class="py-5 px-5 flex flex-wrap lg:flex-1/3 lg:flex-nowrap justify-center">
-          <!-- project cards  -->
-          <div
-            class="w-full md:w-1/2 lg:w-1/3 shadow-xl rounded-lg p-5 my-3 mx-2 flex flex-col gap-3 bg-gray-50 dark:bg-slate-800"
-          >
-            <img class="mt-2 w-full rounded-lg" src="../img/projects-ss/rent-n-repeat.png" alt="" />
-            <a class="font-medium text-lg dark:text-white" href="">RENT N REPEAT</h1>
-            <p class="text-gray-400 text-sm">
-              An e-commerce website for renting out clothing items.
-            </p>
-            <div class="flex flex-col lg:flex-row gap-4 lg:gap-2 justify-between items-center">
-              <div class="flex flex-wrap gap-1 text-[.75rem]">
-                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
-                  HTML
-                </p>
-                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
-                  HTML
-                </p><p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
-                  HTML
-                </p><p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
-                  HTML
-                </p>
-              </div>
-              <a class="dark:hidden" href="https://www.github.com/fatin-israq"><img src="../img/github-black.svg" alt="github-icon"></a>
-              <a class="hidden dark:block" href="https://www.github.com/fatin-israq"><img src="../img/github-white.svg" alt="github-icon"></a>
-            </div>
-          </div>
-          <!-- project cards  -->
-          <div
-            class="w-full md:w-1/2 lg:w-1/3 shadow-xl rounded-lg p-5 my-3 mx-2 flex flex-col gap-3 bg-gray-50 dark:bg-slate-800"
-          >
-            <img class="mt-2 w-full rounded-lg" src="../img/projects-ss/rent-n-repeat.png" alt="" />
-            <a class="font-medium text-lg dark:text-white" href="">RENT N REPEAT</h1>
-            <p class="text-gray-400 text-sm">
-              An e-commerce website for renting out clothing items.
-            </p>
-            <div class="flex flex-col lg:flex-row gap-4 lg:gap-2 justify-between items-center">
-              <div class="flex flex-wrap gap-1 text-[.75rem]">
-                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
-                  HTML
-                </p>
-                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
-                  HTML
-                </p><p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
-                  HTML
-                </p><p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
-                  HTML
-                </p>
-              </div>
-              <a class="dark:hidden" href="https://www.github.com/fatin-israq"><img src="../img/github-black.svg" alt="github-icon"></a>
-              <a class="hidden dark:block" href="https://www.github.com/fatin-israq"><img src="../img/github-white.svg" alt="github-icon"></a>
-            </div>
-          </div>
-          <!-- project cards  -->
-          <div
-            class="w-full md:w-1/2 lg:w-1/3 shadow-xl rounded-lg p-5 my-3 mx-2 flex flex-col gap-3 bg-gray-50 dark:bg-slate-800"
-          >
-            <img class="mt-2 w-full rounded-lg" src="../img/projects-ss/rent-n-repeat.png" alt="" />
-            <a class="font-medium text-lg dark:text-white" href="">RENT N REPEAT</h1>
-            <p class="text-gray-400 text-sm">
-              An e-commerce website for renting out clothing items.
-            </p>
-            <div class="flex flex-col lg:flex-row gap-4 lg:gap-2 justify-between items-center">
-              <div class="flex flex-wrap gap-1 text-[.75rem]">
-                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
-                  HTML
-                </p>
-                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
-                  HTML
-                </p><p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
-                  HTML
-                </p><p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
-                  HTML
-                </p>
-              </div>
-              <a class="dark:hidden" href="https://www.github.com/fatin-israq"><img src="../img/github-black.svg" alt="github-icon"></a>
-              <a class="hidden dark:block" href="https://www.github.com/fatin-israq"><img src="../img/github-white.svg" alt="github-icon"></a>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-    <!-- Works Section -->
-    <div id="work" class="py-10 dark:bg-slate-900">
-      <div class="container mx-auto">
-        <!-- top  -->
-        <div class="flex flex-col gap-3 items-center justify-between">
-          <h1 class="text-indigo-600 font-bold">WORKS AND PROJECTS</h1>
-          <h1 class="text-3xl dark:text-white">What do I do?</h1>
-          <p class="w-1/2 text-center text-gray-400">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
-            expedita debitis voluptatem excepturi vel totam dolorem vero fugit!
-            Ipsam, placeat!
-          </p>
-        </div>
-        <!-- bottom  -->
-        <div class="py-5 px-10 sm:0 flex flex-wrap justify-center">
-          <!-- project cards  -->
-          <div
-            class="w-full lg:w-1/5 md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-7 m-1"
-          >
-            <img src="../img/item.png" alt="" />
-          </div>
-
-          <div
-            class="w-full lg:w-1/5 md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-7 m-1"
-          >
-            <img src="../img/item.png" alt="" />
-          </div>
-
-          <div
-            class="w-full lg:w-1/5 md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-7 m-1"
-          >
-            <img src="../img/item.png" alt="" />
-          </div>
-
-          <div
-            class="w-full lg:w-1/5 md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-7 m-1"
-          >
-            <img src="../img/item.png" alt="" />
-          </div>
-
-          <div
-            class="w-full lg:w-1/5 md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-7 m-1"
-          >
-            <img src="../img/item.png" alt="" />
-          </div>
-
-          <div
-            class="w-full lg:w-1/5 md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-7 m-1"
-          >
-            <img src="../img/item.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- contact  -->
-    <div id="contact" class="dark:bg-slate-900 py-10">
-      <div class="container mx-auto">
-        <!-- top  -->
-        <div class="flex flex-col gap-3 items-center">
-          <h1 class="text-indigo-600 font-bold">CONTACT</h1>
-          <h1 class="text-3xl dark:text-white">Got any Question?</h1>
-          <p class="w-1/2 text-center text-gray-400">
-            Do you have an idea? Let's discuss it and see what we can do
-            together.
-          </p>
-        </div>
-        <!-- bottom  -->
-        <form
-          action="https://api.web3forms.com/submit"
-          method="POST"
-          class="mx-5 py-5 flex flex-col gap-5 justify-cente items-center"
-        >
-          <input type="hidden" name="access_key" value="API-KEY-VALUE" />
-          <!--Your web3forms API key goes here-->
-          <div class="flex justify-stretch gap-5 w-full max-w-2xl">
-            <input
-              class="py-2 px-4 w-full ring-1 ring-indigo-300 dark:bg-slate-800 dark:ring-0 dark:text-white rounded-xl"
-              type="text"
-              name="name"
-              placeholder="Your Name"
-            />
-            <input
-              class="py-2 px-4 w-full ring-1 ring-indigo-300 dark:bg-slate-800 dark:ring-0 dark:text-white rounded-xl"
-              type="email"
-              name="email"
-              placeholder="Your Email"
-            />
-          </div>
-          <textarea
-            class="py-2 px-4 w-full md:w-1/2 lg:w-1/2 max-w-2xl ring-1 ring-indigo-300 dark:bg-slate-800 dark:ring-0 dark:text-white rounded-lg max-h-[200px] min-h-[150px]"
-            cols="30"
-            rows="10"
-            name="message"
-            placeholder="Your Message"
-          ></textarea>
-          <button
-            class="w-1/2 md:w-1/2 lg:w-full max-w-2xl bg-indigo-600 text-white font-medium px-3 py-2 rounded-xl cursor-pointer"
-            type="submit"
-          >
-            Send Message
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <!-- footer  -->
-    <div class="w-full bg-gray-800">
-      <div
-        class="container mx-auto py-5 flex items-center justify-between text-white"
-      >
+<body class="font-poppins dark">
+  <!-- intro section -->
+  <div
+    class="h-[50vh] lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-700 dark:to-slate-900 relative overflow-hidden">
+    <!-- navbar -->
+    <nav class="w-full fixed top-0 bg-white z-10 px-16 dark:bg-slate-900">
+      <div class="container mx-auto py-5 flex items-center justify-between">
         <div class="flex items-center gap-2">
-          <img class="w-8" src="../img/israqlogo-white.png" alt="Logo" />
-          <span class="text-2xl font-bold text-white">1sraQ</span>
+          <a href="../img/1sraQ.png"></a>
+          <img class="w-8 dark:hidden" src="../img/israqlogoBlue.png" alt="Logo" />
+          <img class="w-8 hidden dark:block" src="../img/israqlogo-white.png" alt="Logo" />
+          <span class="text-2xl font-bold text-indigo-900 dark:text-white">1sraQ</span>
         </div>
-        <span class="hidden md:block font-medium text-white"
-          >©1sraQ. Design with 🤍 by Talha.</span
-        >
-        <div class="flex gap-4">
-          <img
-            class="w-4 cursor-pointer"
-            src="../img/linkedin.png"
-            alt="LinkedIn icon"
-          />
-          <img
-            class="w-4 cursor-pointer"
-            src="../img/facebook.png"
-            alt="Facebook icon"
-          />
-          <img
-            class="w-4 cursor-pointer"
-            src="../img/instagram.png"
-            alt="Instagram icon"
-          />
-          <img
-            class="w-4 cursor-pointer"
-            src="../img/twitter.png"
-            alt="Twitter icon"
-          />
+        <ul class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm">
+          <li class="hover:text-gray-500">
+            <a href="#">HOME</a>
+          </li>
+          <li class="hover:text-gray-500">
+            <a href="#about">ABOUT ME</a>
+          </li>
+          <li class="hover:text-gray-500">
+            <a href="#projects">PROJECTS</a>
+          </li>
+          <li class="hover:text-gray-500">
+            <a href="#work">RESUME</a>
+          </li>
+          <li class="hover:text-gray-500">
+            <a href="#contact">CONTACT</a>
+          </li>
+        </ul>
+        <img id="moon" src="../img/moon.png" class="hidden md:block dark:hidden w-5 cursor-pointer" alt="moon image" />
+        <img id="sun" src="../img/day-mode.png" class="hidden dark:block w-5 cursor-pointer" alt="moon image" />
+        <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-10">
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+        </div>
+        <ul id="menu"
+          class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+          <li class="">
+            <a id="hLink" href="#">HOME</a>
+          </li>
+          <li class="">
+            <a id="hLink" href="#about">ABOUT ME</a>
+          </li>
+          <li class="">
+            <a id="hLink" href="#projects">PROJECTS</a>
+          </li>
+          <li class="">
+            <a id="hLink" href="#work">RESUME</a>
+          </li>
+          <li class="">
+            <a id="hLink" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- intro content -->
+    <!-- image -->
+    <img
+      class="absolute bottom-0 right-[5%] lg:left-[10%] mx-auto h-[75%] lg:h-[83%] object-cover hidden lg:block dark:hidden"
+      src="../img/jett.png" alt="Israq portrait" />
+    <img
+      class="absolute bottom-0 right-[-10%] md:right-[10%] lg:left-[10%] mx-auto h-[75%] lg:h-[83%] object-cover lg:hidden dark:block dark:z-20"
+      src="../img/omen.png" alt="Israq portrait" />
+    <!-- circle -->
+    <div
+      class="hidden lg:block absolute -bottom-[40%] left-0 right-0 mx-auto w-big h-big bg-indigo-900 dark:bg-gradient-to-t dark:from-blue-950 dark:to-blue-0 dark:bg-gray-300 rounded-full -z-10 dark:z-10 dark:opacity-10">
+    </div>
+    <!-- animated text -->
+    <div
+      class="absolute top-1/3 left-5 text-base sm:left-10 sm:text-xl md:left-1/4 md:text-3xl lg:left-5 xl:left-48 lg:text-5xl font-bold flex flex-col gap-5">
+      <span class="text-gray-600">Developer</span>
+      <p id="text" class="text-red-500 max-w-[100px] lg:max-w-[200px]"></p>
+    </div>
+    <!-- texts -->
+    <div
+      class="hidden lg:flex flex-col gap-5 rounded-2xl shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3">
+      <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Talha</h1>
+      <p class="text-gray-400">
+        A passionate Software Developer and Undergraduate Teaching Assistant at UIU. I love building applications,
+        exploring AI, and crafting seamless user experiences.
+      </p>
+      <a class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-lg font-semibold w-fit flex gap-2 justify-center items-center"
+        href="../img/MyResume.pdf" download="MyResume.pdf">
+        <img src="../img/download-white.svg" alt="Download Icon" class="pointer-events-none">
+        Resume
+      </a>
+    </div>
+  </div>
+  <!-- About section  -->
+  <div id="about" class="px-10 dark:bg-slate-900 py-10">
+    <div class="container mx-auto py-20 px-4 flex flex-col-reverse lg:flex-row gap-10 items-center">
+      <!-- left -->
+      <div class="relative">
+        <img class="h-1/6 absolute top-0 left-0 -z-10" src="../img/dots.png" alt="" />
+        <div
+          class="h-full rounded-full overflow-hidden transition-all duration-500 ease-in-out hover:shadow-xl hover:shadow-indigo-500/50">
+          <img src="../img/portrait.png" alt="Portrait" />
+        </div>
+      </div>
+      <!-- right -->
+      <div class="my-auto flex flex-col gap-3">
+        <h1 class="text-indigo-600 font-bold">ABOUT ME</h1>
+        <h1 class="text-3xl font-medium dark:text-white">Better Design</h1>
+        <h1 class="text-3xl font-medium dark:text-white">
+          Better Experience
+        </h1>
+        <p class="text-gray-400">
+          Hey there! I'm Fatin Israq Talha, a Computer Science undergraduate at United International University and an
+          Undergraduate Teaching Assistant for the Introduction to Computer Science course.
+
+          I’m passionate about software development, with a strong interest in web development, AI, and machine
+          learning. I love building applications that solve real-world problems and continuously expanding my knowledge
+          in cutting-edge technologies.
+
+          Currently, I’m working on Bankify, a bank management system using JavaFX and Scene Builder. I'm also diving
+          into machine learning and web development, exploring frameworks and technologies to enhance my skills.
+
+          When I’m not coding, you’ll probably find me playing video games, especially psychological thrillers, or
+          experimenting with new tech projects. My goal is to become a skilled software engineer, continuously learning
+          and improving along the way.
+
+          Let’s connect and build something amazing! 🚀
+        </p>
+
+        <h2 class="text-gray-400 font-medium">C/C++</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+        </div>
+        <h2 class="text-gray-400 font-medium">HTML</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+        </div>
+        <h2 class="text-gray-400 font-medium">CSS</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-3/4 bg-indigo-600 h-1.5 rounded-md"></div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
-    <script src="autotyping.js"></script>
-  </body>
+  <!-- Projects Section -->
+  <div id="projects" class="dark:bg-slate-900 py-10">
+    <div class="container mx-auto">
+      <!-- top  -->
+      <div class="flex flex-col gap-3 items-center justify-between">
+        <h1 class="text-indigo-600 font-bold">PROJECTS</h1>
+        <h1 class="text-3xl dark:text-white">What do I do?</h1>
+        <p class="w-1/2 text-center text-gray-400">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+          expedita debitis voluptatem excepturi vel totam dolorem vero fugit!
+          Ipsam, placeat!
+        </p>
+      </div>
+      <!-- bottom  -->
+      <div class="py-5 px-5 flex flex-wrap lg:flex-1/3 lg:flex-nowrap justify-center">
+        <!-- project cards  -->
+        <div
+          class="w-full md:w-1/2 lg:w-1/3 shadow-xl rounded-lg p-5 my-3 mx-2 flex flex-col gap-3 bg-gray-50 dark:bg-slate-800">
+          <img class="mt-2 w-full rounded-lg" src="../img/projects-ss/rent-n-repeat.png" alt="" />
+          <a class="font-medium text-lg dark:text-white" href="">RENT N REPEAT</h1>
+            <p class="text-gray-400 text-sm">
+              An e-commerce website for renting out clothing items.
+            </p>
+            <div class="flex flex-col lg:flex-row gap-4 lg:gap-2 justify-between items-center">
+              <div class="flex flex-wrap gap-1 text-[.75rem]">
+                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
+                  HTML
+                </p>
+                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
+                  HTML
+                </p>
+                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
+                  HTML
+                </p>
+                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
+                  HTML
+                </p>
+              </div>
+              <a class="dark:hidden" href="https://www.github.com/fatin-israq"><img src="../img/github-black.svg"
+                  alt="github-icon"></a>
+              <a class="hidden dark:block" href="https://www.github.com/fatin-israq"><img src="../img/github-white.svg"
+                  alt="github-icon"></a>
+            </div>
+        </div>
+        <!-- project cards  -->
+        <div
+          class="w-full md:w-1/2 lg:w-1/3 shadow-xl rounded-lg p-5 my-3 mx-2 flex flex-col gap-3 bg-gray-50 dark:bg-slate-800">
+          <img class="mt-2 w-full rounded-lg" src="../img/projects-ss/rent-n-repeat.png" alt="" />
+          <a class="font-medium text-lg dark:text-white" href="">RENT N REPEAT</h1>
+            <p class="text-gray-400 text-sm">
+              An e-commerce website for renting out clothing items.
+            </p>
+            <div class="flex flex-col lg:flex-row gap-4 lg:gap-2 justify-between items-center">
+              <div class="flex flex-wrap gap-1 text-[.75rem]">
+                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
+                  HTML
+                </p>
+                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
+                  HTML
+                </p>
+                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
+                  HTML
+                </p>
+                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
+                  HTML
+                </p>
+              </div>
+              <a class="dark:hidden" href="https://www.github.com/fatin-israq"><img src="../img/github-black.svg"
+                  alt="github-icon"></a>
+              <a class="hidden dark:block" href="https://www.github.com/fatin-israq"><img src="../img/github-white.svg"
+                  alt="github-icon"></a>
+            </div>
+        </div>
+        <!-- project cards  -->
+        <div
+          class="w-full md:w-1/2 lg:w-1/3 shadow-xl rounded-lg p-5 my-3 mx-2 flex flex-col gap-3 bg-gray-50 dark:bg-slate-800">
+          <img class="mt-2 w-full rounded-lg" src="../img/projects-ss/rent-n-repeat.png" alt="" />
+          <a class="font-medium text-lg dark:text-white" href="">RENT N REPEAT</h1>
+            <p class="text-gray-400 text-sm">
+              An e-commerce website for renting out clothing items.
+            </p>
+            <div class="flex flex-col lg:flex-row gap-4 lg:gap-2 justify-between items-center">
+              <div class="flex flex-wrap gap-1 text-[.75rem]">
+                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
+                  HTML
+                </p>
+                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
+                  HTML
+                </p>
+                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
+                  HTML
+                </p>
+                <p class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 dark:text-white">
+                  HTML
+                </p>
+              </div>
+              <a class="dark:hidden" href="https://www.github.com/fatin-israq"><img src="../img/github-black.svg"
+                  alt="github-icon"></a>
+              <a class="hidden dark:block" href="https://www.github.com/fatin-israq"><img src="../img/github-white.svg"
+                  alt="github-icon"></a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Works Section -->
+  <div id="work" class="py-10 dark:bg-slate-900">
+    <div class="container mx-auto">
+      <!-- top  -->
+      <div class="flex flex-col gap-3 items-center justify-between">
+        <h1 class="text-indigo-600 font-bold">WORKS AND PROJECTS</h1>
+        <h1 class="text-3xl dark:text-white">What do I do?</h1>
+        <p class="w-1/2 text-center text-gray-400">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+          expedita debitis voluptatem excepturi vel totam dolorem vero fugit!
+          Ipsam, placeat!
+        </p>
+      </div>
+      <!-- bottom  -->
+      <div class="py-5 px-10 sm:0 flex flex-wrap justify-center">
+        <!-- project cards  -->
+        <div class="w-full lg:w-1/5 md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-7 m-1">
+          <img src="../img/item.png" alt="" />
+        </div>
+
+        <div class="w-full lg:w-1/5 md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-7 m-1">
+          <img src="../img/item.png" alt="" />
+        </div>
+
+        <div class="w-full lg:w-1/5 md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-7 m-1">
+          <img src="../img/item.png" alt="" />
+        </div>
+
+        <div class="w-full lg:w-1/5 md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-7 m-1">
+          <img src="../img/item.png" alt="" />
+        </div>
+
+        <div class="w-full lg:w-1/5 md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-7 m-1">
+          <img src="../img/item.png" alt="" />
+        </div>
+
+        <div class="w-full lg:w-1/5 md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-7 m-1">
+          <img src="../img/item.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact  -->
+  <div id="contact" class="dark:bg-slate-900 py-10">
+    <div class="container mx-auto">
+      <!-- top  -->
+      <div class="flex flex-col gap-3 items-center">
+        <h1 class="text-indigo-600 font-bold">CONTACT</h1>
+        <h1 class="text-3xl dark:text-white">Got any Question?</h1>
+        <p class="w-1/2 text-center text-gray-400">
+          Do you have an idea? Let's discuss it and see what we can do
+          together.
+        </p>
+      </div>
+      <!-- bottom  -->
+      <form action="https://api.web3forms.com/submit" method="POST"
+        class="mx-5 py-5 flex flex-col gap-5 justify-cente items-center">
+        <input type="hidden" name="access_key" value="API-KEY-VALUE" />
+        <!--Your web3forms API key goes here-->
+        <div class="flex justify-stretch gap-5 w-full max-w-2xl">
+          <input
+            class="py-2 px-4 w-full ring-1 ring-indigo-300 dark:bg-slate-800 dark:ring-0 dark:text-white rounded-xl"
+            type="text" name="name" placeholder="Your Name" />
+          <input
+            class="py-2 px-4 w-full ring-1 ring-indigo-300 dark:bg-slate-800 dark:ring-0 dark:text-white rounded-xl"
+            type="email" name="email" placeholder="Your Email" />
+        </div>
+        <textarea
+          class="py-2 px-4 w-full md:w-1/2 lg:w-1/2 max-w-2xl ring-1 ring-indigo-300 dark:bg-slate-800 dark:ring-0 dark:text-white rounded-lg max-h-[200px] min-h-[150px]"
+          cols="30" rows="10" name="message" placeholder="Your Message"></textarea>
+        <button
+          class="w-1/2 md:w-1/2 lg:w-full max-w-2xl bg-indigo-600 text-white font-medium px-3 py-2 rounded-xl cursor-pointer"
+          type="submit">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer  -->
+  <div class="w-full bg-gray-800">
+    <div class="container mx-auto py-5 flex items-center justify-between text-white">
+      <div class="flex items-center gap-2">
+        <img class="w-8" src="../img/israqlogo-white.png" alt="Logo" />
+        <span class="text-2xl font-bold text-white">1sraQ</span>
+      </div>
+      <span class="hidden md:block font-medium text-white">©1sraQ. Design with 🤍 by Talha.</span>
+      <div class="flex gap-4">
+        <img class="w-4 cursor-pointer" src="../img/linkedin.png" alt="LinkedIn icon" />
+        <img class="w-4 cursor-pointer" src="../img/facebook.png" alt="Facebook icon" />
+        <img class="w-4 cursor-pointer" src="../img/instagram.png" alt="Instagram icon" />
+        <img class="w-4 cursor-pointer" src="../img/twitter.png" alt="Twitter icon" />
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="autotyping.js"></script>
+</body>
+
 </html>
