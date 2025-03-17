@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Fatin Israq Talha</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="font-poppins bg-gray-100 text-gray-900 dark:bg-slate-900 dark:text-white">
+
+    <!-- navbar -->
+    <nav class="w-full fixed top-0 bg-white z-10 px-7 dark:bg-slate-900">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <a href="../img/1sraQ.png"></a>
+                <img class="w-6 dark:hidden" src="../img/israqlogoBlue.png" alt="Logo" />
+                <img class="w-6 hidden dark:block" src="../img/israqlogo-white.png" alt="Logo" />
+                <span class="text-2xl font-bold text-indigo-900 dark:text-white">1sraQ</span>
+            </div>
+            <ul class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm">
+                <li class="hover:text-gray-500">
+                    <a href="index.html">HOME</a>
+                </li>
+                <li class="hover:text-gray-500">
+                    <a href="contact.html">CONTACT</a>
+                </li>
+                <li>
+                    <img id="moon" src="../img/moon.png" class="hidden md:block dark:hidden w-5 cursor-pointer"
+                        alt="moon image" />
+                    <img id="sun" src="../img/day-mode.png" class="hidden dark:block w-5 cursor-pointer"
+                        alt="moon image" />
+                </li>
+            </ul>
+
+            <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-10">
+                <div class="w-6 h-0.5 bg-black"></div>
+                <div class="w-6 h-0.5 bg-black"></div>
+                <div class="w-6 h-0.5 bg-black"></div>
+            </div>
+            <ul id="menu"
+                class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+                <li class="">
+                    <a id="hLink" href="index.html">HOME</a>
+                </li>
+                <li class="">
+                    <a id="hLink" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Resume section  -->
+    <div class="container mt-24 max-w-4xl mx-auto my-10 bg-white dark:bg-slate-800 p-8 shadow-lg rounded-lg">
+        <header class="text-center mb-8 flex flex-col justify-center items-center">
+            <h1 class="text-3xl font-bold">Fatin Israq Talha</h1>
+            <p class="text-gray-600 dark:text-gray-400">Dhaka, Bangladesh | <a href="mailto:israqq2120@gmail.com"
+                    class="text-blue-600">Gmail</a> | <a href="https://www.linkedin.com/in/fatin-israq-talha/"
+                    class="text-blue-600">LinkedIn</a> | <a href="https://github.com/Fatin-Israq"
+                    class="text-blue-600">Github</a></p>
+            <div>
+                <a class="bg-indigo-600 text-white text-sm mt-4 px-6 py-2 rounded-full w-fit flex gap-2 justify-center items-center hover:bg-indigo-800 hover:transition-transform"
+                    href="../img/MyResume.pdf" download="MyResume.pdf">
+                    Download Resume
+                </a>
+            </div>
+        </header>
+
+        <section class="mb-6">
+            <h2 class="text-xl font-semibold border-b pb-2">EDUCATION</h2>
+            <p class="font-bold mt-2">United International University, Dhaka</p>
+            <p>BSc. in Computer Science and Engineering (Oct 2022 – Present)</p>
+            <p><strong>CGPA:</strong> 3.72 (75 credits completed)</p>
+            <p><strong>Relevant Courses:</strong> Structured Programming, OOP, Data Structures, DBMS, AI, Probability &
+                Statistics.</p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-xl font-semibold border-b pb-2">WORK EXPERIENCE</h2>
+            <p class="font-bold  mt-2">Undergraduate Teaching Assistant, United International University (Mar 2025 – Present)
+            </p>
+            <ul class="list-disc pl-5">
+                <li>Assist in lab sessions for student learning.</li>
+                <li>Help students understand fundamental programming concepts.</li>
+                <li>Provide counseling hours for additional guidance.</li>
+            </ul>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-xl font-semibold border-b pb-2">PROJECTS</h2>
+            <ul class="list-disc pl-5  mt-2 space-y-1">
+                <li><strong>Jump N Run</strong> (Python, Pygame) - A 2D side-scrolling platformer game. <a
+                        href="https://github.com/fatin-israq/Jump_N_Run" class="text-blue-600">GitHub</a></li>
+                <li><strong>Rent N Repeat</strong> (HTML, CSS, PHP, MySQL) - A rental ecommerce platform. <a
+                        href="http://rent-n-repeat.infy.uk/" class="text-blue-600">Live</a></li>
+                <li><strong>Rhythmify</strong> (HTML, CSS, JavaScript) - A Spotify clone. <a
+                        href="https://github.com/fatin-israq/rhythmify" class="text-blue-600">GitHub</a></li>
+                <li><strong>Bankify</strong> (Java, JavaFX, CSS) - A banking application. <a
+                        href="https://github.com/fatin-israq/Bankify" class="text-blue-600">GitHub</a></li>
+                <li><strong>Netflix Clone</strong> (HTML, CSS) - A static Netflix homepage clone. <a
+                        href="https://fatin-israq.github.io/Netflix-Home-Page-Clone/" class="text-blue-600">Live</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-xl font-semibold border-b pb-2">SKILLS & INTERESTS</h2>
+            <p class="mt-2"><strong>Programming Languages:</strong> C/C++, Python, Java, JavaScript</p>
+            <p><strong>Technologies & Tools:</strong> MySQL, HTML, CSS, JavaFX, VS Code, Scene Builder</p>
+            <p><strong>Typing Speed:</strong> 80 WPM</p>
+            <p><strong>Hobbies:</strong> Gaming, Reading, Drawing</p>
+        </section>
+
+        <section>
+            <h2 class="text-xl font-semibold border-b pb-2">AWARDS</h2>
+            <ul class="list-disc pl-5  mt-2">
+                <li>100% scholarship for one trimester for exceptional academic performance.</li>
+                <li>50% scholarships in all other trimesters for high CGPA.</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- footer  -->
+    <div class="w-full bg-gray-800">
+        <div class="container mx-auto px-7 py-5 flex items-center justify-between text-white">
+            <div class="flex items-center gap-2">
+                <img class="w-6" src="../img/israqlogo-white.png" alt="Logo" />
+                <span class="text-2xl font-bold text-white">1sraQ</span>
+            </div>
+            <span class="hidden md:block font-medium text-white">© 2025. Fatin Israq Talha. All rights reserved.</span>
+            <div class="flex gap-4">
+                <img class="w-4 cursor-pointer" src="../img/linkedin.png" alt="LinkedIn icon" />
+                <img class="w-4 cursor-pointer" src="../img/facebook.png" alt="Facebook icon" />
+                <img class="w-4 cursor-pointer" src="../img/instagram.png" alt="Instagram icon" />
+                <img class="w-4 cursor-pointer" src="../img/github-sign.png" alt="Twitter icon" />
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

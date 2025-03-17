@@ -34,5 +34,5 @@
 }
 
 * {
-    @apply transition-colors duration-300;
+    @apply transition-colors duration-200;
 }

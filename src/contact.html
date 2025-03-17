@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Fatin Israq Talha</title>
+  <link rel="stylesheet" href="output.css" />
+</head>
+
+<body class="font-poppins min-h-screen flex flex-col">
+  <div class="dark:bg-slate-900 relative overflow-hidden flex-grow">
+    <!-- navbar -->
+    <nav class="w-full fixed top-0 bg-white z-10 px-7 dark:bg-slate-900">
+      <div class="container mx-auto py-5 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <a href="../img/1sraQ.png"></a>
+          <img class="w-6 dark:hidden" src="../img/israqlogoBlue.png" alt="Logo" />
+          <img class="w-6 hidden dark:block" src="../img/israqlogo-white.png" alt="Logo" />
+          <span class="text-2xl font-bold text-indigo-900 dark:text-white">1sraQ</span>
+        </div>
+        <ul class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm">
+          <li class="hover:text-gray-500">
+            <a href="index.html">HOME</a>
+          </li>
+          <li class="hover:text-gray-500">
+            <a href="resume.html">RESUME</a>
+          </li>
+          <li>
+            <img id="moon" src="../img/moon.png" class="hidden md:block dark:hidden w-5 cursor-pointer" alt="moon image" />
+            <img id="sun" src="../img/day-mode.png" class="hidden dark:block w-5 cursor-pointer" alt="moon image" />
+          </li>
+        </ul>
+        <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-10">
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+        </div>
+        <ul id="menu"
+          class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+          <li class="">
+            <a id="hLink" href="index.html">HOME</a>
+          </li>
+          <li class="">
+            <a id="hLink" href="resume.html">RESUME</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- contact info -->
+    <div id="contact" class="dark:bg-slate-900 py-10 mt-16">
+      <!-- Added mt-16 (or similar) to offset the fixed navbar -->
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold">CONTACT</h1>
+          <h1 class="text-3xl dark:text-white">Got any Question?</h1>
+          <p class="w-1/2 text-center text-gray-400">
+            Do you have an idea? Let's discuss it and see what we can do together.
+          </p>
+        </div>
+        <!-- bottom -->
+        <form action="https://api.web3forms.com/submit" method="POST"
+          class="mx-5 py-5 flex flex-col gap-5 justify-center items-center">
+          <input type="hidden" name="access_key" value="API-KEY-VALUE" />
+          <!--Your web3forms API key goes here-->
+          <div class="flex flex-col md:flex-row lg:flex-row justify-stretch gap-5 w-full max-w-2xl">
+            <input
+              class="py-2 px-4 w-full ring-1 ring-indigo-300 dark:bg-slate-800 dark:ring-0 dark:text-white rounded-xl"
+              type="text" name="name" placeholder="Your Name" />
+            <input
+              class="py-2 px-4 w-full ring-1 ring-indigo-300 dark:bg-slate-800 dark:ring-0 dark:text-white rounded-xl"
+              type="email" name="email" placeholder="Your Email" />
+          </div>
+          <textarea
+            class="py-2 px-4 w-full lg:w-1/2 max-w-2xl ring-1 ring-indigo-300 dark:bg-slate-800 dark:ring-0 dark:text-white rounded-lg max-h-[200px] min-h-[150px]"
+            cols="30" rows="10" name="message" placeholder="Your Message"></textarea>
+          <button
+            class="md:w-1/2 lg:w-full max-w-2xl bg-indigo-600 hover:bg-indigo-800 text-white font-medium px-3 py-2 rounded-xl cursor-pointer"
+            type="submit">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="w-full bg-gray-800 mt-auto">
+    <div class="container mx-auto px-7 py-5 flex items-center justify-between text-white">
+      <div class="flex items-center gap-2">
+        <img class="w-6" src="../img/israqlogo-white.png" alt="Logo" />
+        <span class="text-2xl font-bold text-white">1sraQ</span>
+      </div>
+      <span class="hidden md:block font-medium text-white">© 2025. Fatin Israq Talha. All rights reserved.</span>
+      <div class="flex gap-4">
+        <img class="w-4 cursor-pointer" src="../img/linkedin.png" alt="LinkedIn icon" />
+        <img class="w-4 cursor-pointer" src="../img/facebook.png" alt="Facebook icon" />
+        <img class="w-4 cursor-pointer" src="../img/instagram.png" alt="Instagram icon" />
+        <img class="w-4 cursor-pointer" src="../img/github-sign.png" alt="Twitter icon" />
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
