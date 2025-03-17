@@ -1,0 +1,20 @@
+* Center the whole page
+
+// Advanced 
+* SEO optimization
+* Performance optimization with lazy loading
+* Custom 404 Error page
+
+
+
+// Completed
+* Add email feature (complete)
+* Dark Mode Toggle Animation
+* Add sun button when dark mode enabled (complete)
+* Add transition effect in profile picture
+* Add a resume section
+* Update the pictures
+* Add links at the footer
+* Make project cards with SS
+* Make a work experience section
+* Add Language proficiency section - About me
