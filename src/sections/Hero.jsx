@@ -1,7 +1,6 @@
 import {
   ArrowRight,
   ChevronDown,
-  Download,
   Github,
   Instagram,
   Linkedin,
@@ -51,26 +50,27 @@ const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Aspiring Software Engineer • React Developer
+                Aspiring Software Engineer • Frontend-First Developer
               </span>
             </div>
 
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Crafting <span className="text-primary glow-text">digital</span>
+                Building{" "}
+                <span className="text-primary glow-text">software</span>
                 <br />
-                experiences with
+                that blends clean
                 <br />
-                <span className="font-serif italic font-normal text-white">
-                  precision.
+                <span className="text-4xl md:text-5xl lg:text-6xl font-serif italic font-normal text-white">
+                  engineering & intelligence.
                 </span>
               </h1>
 
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Fatin Israq Talha - an undergrad CSE student. Lorem
-                ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
-                quo ratione nisi?
+                Hi, I'm Fatin Israq Talha — a Computer Science undergraduate
+                focused on frontend-first full-stack development and actively
+                transitioning into AI-driven software engineering.
               </p>
             </div>
 
@@ -85,9 +85,15 @@ const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow Me: </span>
               {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
-                { icon: Instagram, href: "#" },
+                { icon: Github, href: "https://github.com/fatin-israq" },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/fatin-israq-talha-296026255/",
+                },
+                {
+                  icon: Instagram,
+                  href: "https://www.instagram.com/israq_talha/",
+                },
               ].map((social, i) => (
                 <a
                   key={i}
