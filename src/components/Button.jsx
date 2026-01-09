@@ -1,4 +1,13 @@
-const Button = ({ className = "", size = "default", children, ...props }) => {
+const Button = ({
+  className = "",
+  size = "default",
+  children,
+  href,
+  target,
+  rel,
+  download,
+  ...props
+}) => {
   const baseClasses =
     "relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/80 shadow-lg shadow-primary/25 transition";
 
@@ -8,6 +17,26 @@ const Button = ({ className = "", size = "default", children, ...props }) => {
     lg: "px-8 py-4 text-lg",
   };
   const classes = `${baseClasses} ${sizeClasses[size]} ${className}`;
+
+  if (href) {
+    const computedRel =
+      target === "_blank" ? rel || "noopener noreferrer" : rel;
+    return (
+      <a
+        className={classes}
+        href={href}
+        target={target}
+        rel={computedRel}
+        download={download}
+        {...props}
+      >
+        <span className="relative flex items-center justify-center gap-2">
+          {children}
+        </span>
+      </a>
+    );
+  }
+
   return (
     <button className={classes} {...props}>
       <span className="relative flex items-center justify-center gap-2">
