@@ -6,7 +6,8 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
-  { href: "#testimonials", label: "Testimonials" },
+  { href: "/resume.pdf", label: "Resume" },
+  // { href: "#testimonials", label: "Testimonials" },
 ];
 
 const Navbar = () => {
@@ -80,7 +81,9 @@ const Navbar = () => {
               </a>
             ))}
 
-            <Button onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Button>
+            <Button onClick={() => setIsMobileMenuOpen(false)}>
+              Contact Me
+            </Button>
           </div>
         </div>
       )}
