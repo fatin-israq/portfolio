@@ -1,16 +1,58 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website showcasing my projects, skills, and experience as a Computer Science undergraduate and aspiring software engineer.
 
-Currently, two official plugins are available:
+**Live Site:** [https://fatin-israq.vercel.app/](https://fatin-israq.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- 🎨 Modern UI with glass-morphism effects and animations
+- 📱 Fully responsive design
+- 📧 Contact form with EmailJS integration
+- 📄 Downloadable resume
+- 🚀 Fast performance with Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React
+- **Styling:** Tailwind CSS
+- **Build Tool:** Vite
+- **Icons:** Lucide React
+- **Email Service:** EmailJS
+- **Deployment:** Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file with your EmailJS credentials:
+   ```env
+   VITE_EMAILJS_SERVICE_ID=your_service_id
+   VITE_EMAILJS_TEMPLATE_ID=your_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+5. Build for production:
+   ```bash
+   npm run build
+   ```
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── layout/         # Layout components (Navbar, Footer)
+├── sections/       # Page sections (Hero, About, Projects, etc.)
+└── assets/         # Static assets
+```
+
+## License
+
+© 2026 Fatin Israq Talha. All rights reserved.
